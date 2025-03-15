@@ -334,7 +334,7 @@ def fast_sort(lst):
     post: Returns a new list that is sorted based on the items in lst.
 
     """
-    # Implementing a quick sort
+    # Implementing quick sort
     if len(lst) <= 1:
         return lst
 
@@ -414,7 +414,7 @@ def get_feedback(remaining_secret_words, guessed_word):
             2. Difficulty of the feedback
             3. Lexicographical ordering of the feedback (ASCII value comparisons)
     """
-    # Build a map from feedback_colors => list of words
+    # Build a map from feedback_colors (tuple) --> list of words
     families_map = {}
     for word in remaining_secret_words:
         colors = tuple(get_feedback_colors(word, guessed_word))
