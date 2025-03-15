@@ -133,7 +133,7 @@ class Keyboard:
             line += " ".join(colored_letters)
             lines.append(line)
         return "\n".join(lines)
-          
+
 
 
 class WordFamily:
@@ -382,7 +382,7 @@ def get_feedback_colors(secret_word, guessed_word):
         if guessed_word[i] == secret_word[i]:
             feedback[i] = CORRECT_COLOR
             letter_count[guessed_word[i]] -= 1
-    
+
     # Second pass: assign WRONG_SPOT_COLOR or NOT_IN_WORD_COLOR
     for i in range(NUM_LETTERS):
         if feedback[i] is None:
